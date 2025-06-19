@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Catalogue</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 Book Catalog (Searchable)</h1>
+
+    <form method="get" action="/">
+        <input type="text" name="query" placeholder="Search by title or category..." value="{{ query }}">
+        <button type="submit">Search</button>
+    </form>
+
+    <p>Showing {{ books|length }} books</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Availability</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Product Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.Title }}</td>
+                <td>{{ book.Price }}</td>
+                <td>{{ book.Rating }}</td>
+                <td>{{ book.Availability }}</td>
+                <td>{{ book.Category }}</td>
+                <td>{{ book.Description[:80] }}...</td>
+                <td><a href="{{ book['Product Link'] }}" target="_blank">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
