@@ -163,5 +163,3 @@ Output:
 ---
 
 👨‍💻 Developed by \[Gyan Anand]
-
-```
