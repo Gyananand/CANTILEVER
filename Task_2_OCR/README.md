@@ -1,106 +1,113 @@
-# 📝 OCR Web App 
+# 📝 OCR Web App
 
-A simple web application to extract text from images, PDFs, and DOCX files using **Tesseract OCR** and **Flask**.  
-It also supports exporting the extracted text to **PDF** and **DOCX** formats.
+A lightweight and intuitive **Flask web application** that extracts text from **images, PDFs, and DOCX files** using **Tesseract OCR**.
+It also allows exporting the extracted text into **PDF** and **Word (DOCX)** formats.
 
 ---
 
 ## 🚀 Features
-- Upload **Image (JPG, PNG)**, **PDF**, or **DOCX** files  
-- Extract text using [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)  
-- Supports **English language**  
-- Download extracted text as:  
-  - Plain text (shown on webpage)  
-  - PDF file  
-  - Word file (DOCX)  
-- Clean and simple UI (Flask + HTML + Bootstrap)
+
+* 📤 Upload **Images (JPG, PNG)**, **PDF**, or **DOCX** files
+* 🔍 Extract text using [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+* 🌐 Supports **English language OCR**
+* 💾 Export extracted text as:
+
+  * Plain text (shown on webpage)
+  * **PDF** file
+  * **Word (DOCX)** file
+* 🎨 Simple & clean web interface (Flask + Bootstrap)
 
 ---
 
 ## 🛠 Tech Stack
-- **Backend**: Flask (Python)  
-- **OCR Engine**: Tesseract OCR (`pytesseract`)  
-- **File Handling**: `python-docx`, `reportlab`, `pdf2image`  
-- **Frontend**: HTML + Bootstrap  
-- **Extras**: OpenCV (for image preprocessing)
+
+* **Backend**: Flask (Python)
+* **OCR Engine**: Tesseract OCR (`pytesseract`)
+* **File Handling**: `python-docx`, `reportlab`, `pdf2image`
+* **Image Preprocessing**: OpenCV
+* **Frontend**: HTML + Bootstrap
 
 ---
 
 ## 📂 Project Structure
-```
 
-Task\_2\_OCR/
-│── app.py                # Flask app entry point
-│── requirements.txt      # Dependencies
+```bash
+Task_2_OCR/
+│── app.py                # Flask application
+│── requirements.txt      # Python dependencies
 │── templates/
 │   └── index.html        # Web UI template
-│── uploads/              # Uploaded files
-│── README.md             # Documentation
-
-````
+│── uploads/              # Uploaded files (temporary storage)
+│── README.md             # Project documentation
+```
 
 ---
 
 ## ⚙️ Installation & Usage
 
-1. Clone this repository and navigate to the OCR task folder:
-   ```bash
-   git clone https://github.com/your-username/CANTILEVER.git
-   cd CANTILEVER/Task_2_OCR
-````
+### 1️⃣ Clone the repository
 
-2. Create and activate a virtual environment:
+```bash
+git clone https://github.com/your-username/CANTILEVER.git
+cd CANTILEVER/Task_2_OCR
+```
 
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate   # On Windows
-   source venv/bin/activate  # On Linux/Mac
-   ```
+### 2️⃣ Create & activate virtual environment
 
-3. Install dependencies:
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate  
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Linux / Mac
+python3 -m venv venv
+source venv/bin/activate
+```
 
-4. Make sure **Tesseract OCR** is installed:
+### 3️⃣ Install dependencies
 
-   * [Download Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
-   * Add it to your system PATH
+```bash
+pip install -r requirements.txt
+```
 
-5. Run the Flask app:
+### 4️⃣ Install Tesseract OCR
 
-   ```bash
-   python app.py
-   ```
+* [Download Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+* Add Tesseract to your **system PATH**
 
-6. Open your browser and go to:
+### 5️⃣ Run the Flask app
 
-   ```
-   http://127.0.0.1:5000/
-   ```
+```bash
+python app.py
+```
+
+### 6️⃣ Open in browser
+
+```
+http://127.0.0.1:5000/
+```
 
 ---
 
 ## 📸 Example Workflow
 
-1. Upload an image, PDF, or DOCX file
+1. Upload an **image**, **PDF**, or **DOCX** file
 2. The app extracts text using OCR
-3. View text directly on the webpage
-4. Download text as PDF or DOCX
+3. Text appears on the webpage instantly
+4. Option to **download text as PDF or DOCX**
 
 ---
 
-## 🎯 Future Improvements
+## 🎯 Future Enhancements
 
-* Add support for multiple languages
-* Improve OCR accuracy with advanced preprocessing
-* Deploy on Heroku or any cloud platform
+* 🌍 Multi-language OCR support
+* 🤖 Advanced preprocessing for better accuracy
+* ☁️ Deploy on **Heroku / Render / AWS**
+* 📱 Mobile-friendly responsive UI
 
 ---
 
 ## 👨‍💻 Author
 
-Developed as part of **Cantilever Internship** Task 2.
-
-```
+Developed as part of **Cantilever Internship – Task 2** ✨
+👉 Would you like me to also design a **badge section** (Python version, Flask, Tesseract, etc.) at the top like many popular GitHub repos? That makes the README look even more professional.
