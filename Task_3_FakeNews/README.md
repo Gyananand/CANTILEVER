@@ -165,8 +165,3 @@ Output:
 👨‍💻 Developed by \[Gyan Anand]
 
 ```
-
----
-
-👉 Do you want me to also create a `requirements.txt` for you so you can install everything in one command?
-```
